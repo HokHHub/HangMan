@@ -1,0 +1,30 @@
+@font-face {
+    font-family: 'Monomakh';
+    src: url('/fonts/Monomakh.ttf');
+}
+
+body {
+    background: linear-gradient( #3c00ff, transparent 1px), linear-gradient( 90deg, #bbb, transparent 1px);
+    background-size: 30px 30px;
+    background-position: center center;
+}
+
+h1 {
+    font-family: 'Monomakh';
+    font-size: 45px;
+    width: fit-content;
+    padding-top: 60px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.overlay {
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+}

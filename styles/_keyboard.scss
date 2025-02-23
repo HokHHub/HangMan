@@ -1,0 +1,30 @@
+.keyboard {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    column-gap: 35px;
+    row-gap: 30px;
+
+    &__key {
+        cursor: pointer;
+        font-family: 'Monomakh';
+        font-size: 62px;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .keyboard {
+        column-gap: 25px;
+        row-gap: 20px;
+
+        &__key {
+            font-size: 41px;
+        }
+    }
+}

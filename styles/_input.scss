@@ -1,0 +1,30 @@
+.input {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 0;
+
+    &__block {
+        text-align: center;
+        width: 65px;
+        height: 80px;
+        border: 2px solid black;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .input {
+        column-gap: 25px;
+        row-gap: 20px;
+
+        &__block {
+            width: 50px;
+            height: 55px;
+        }
+    }
+}

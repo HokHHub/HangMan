@@ -1,0 +1,124 @@
+@font-face {
+  font-family: "Monomakh";
+  src: url("/fonts/Monomakh.ttf");
+}
+body {
+  background: linear-gradient(#3c00ff, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px);
+  background-size: 30px 30px;
+  background-position: center center;
+}
+
+h1 {
+  font-family: "Monomakh";
+  font-size: 45px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-top: 60px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 30px;
+    padding-top: 30px;
+  }
+}
+.hangman {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .hangman__img {
+    width: 300px;
+  }
+}
+.keyboard {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 15px;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 30px;
+}
+.keyboard__key {
+  cursor: pointer;
+  font-family: "Monomakh";
+  font-size: 62px;
+  margin: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .keyboard {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 20px;
+  }
+  .keyboard__key {
+    font-size: 41px;
+  }
+}
+.input {
+  display: flex;
+  flex-direction: row;
+  max-width: 900px;
+  width: 100%;
+  justify-content: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px 0;
+}
+.input__block {
+  text-align: center;
+  width: 65px;
+  height: 80px;
+  border: 2px solid black;
+}
+
+@media screen and (max-width: 500px) {
+  .input {
+    -moz-column-gap: 25px;
+         column-gap: 25px;
+    row-gap: 20px;
+  }
+  .input__block {
+    width: 50px;
+    height: 55px;
+  }
+}
+.newgame {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.newgame__text {
+  font-family: "Monomakh";
+  font-size: 50px;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.newgame__button {
+  cursor: pointer;
+  left: 50%;
+  width: 200px;
+  font-family: "Monomakh";
+  font-size: 30px;
+  background-color: transparent;
+}/*# sourceMappingURL=style.css.map */
